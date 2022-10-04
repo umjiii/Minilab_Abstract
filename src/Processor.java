@@ -3,8 +3,10 @@ public class Processor extends Worker {
     double bonusTarget;
 
     //Parameterized constructor
-    void Processor(String name, int rating, int id) {
-        super.Worker(name, rating, id);
+    Processor(String theName, int theRating, int theID, double theBonusTarget)
+    {
+        super(theName, theRating, theID);
+        this.bonusTarget = theBonusTarget;
     }
 
     //calculateBonus will return the bonus earned by each instance.
@@ -13,17 +15,9 @@ public class Processor extends Worker {
     }
 
     //compareTo
-    public int compareTo(Worker worker)
-    {
-        return super.compareTo(worker);
-    }
     public String toString()
     {
         return super.toString();
     }
 
-    @Override
-    public int compareTo(Object o) {
-        return 0;
-    }
 }
