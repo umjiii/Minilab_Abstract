@@ -1,3 +1,14 @@
+/*
+CSC205: #14891 / Monday 11AM-1PM
+Minilab: 4
+Author: Stephen Arel
+Description: This abstract parent class implements interface Comparable and provides methods and
+a constructor to create different types of "workers". It can compare any type of worker with another using
+compareTo, construct a parameter-based worker, provide an abstract method calculateBonus for
+child classes to implement, and a toString method to print the object worker and list
+some of its attributes.
+ */
+
 public abstract class Worker implements Comparable<Worker> {
     //data
     String name;
